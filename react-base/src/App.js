@@ -1,8 +1,10 @@
 // This file is part of the React Base project.
 import React from "react";
 import Login from "./pages/Login/Index";
-// import './styles/GlobalStyles';
+
+import Header from "./components/Header";
 import GlobalStyles from "./styles/GlobalStyles";
+
 
 function App() {
   return (
@@ -10,8 +12,9 @@ function App() {
     <div className="App">
 
       {/* <h1>Hello world! </h1> */}
-       <Login />
-       <GlobalStyles />
+    <Header />
+    <Login />
+    <GlobalStyles />
     </div>
 
 
