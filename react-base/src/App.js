@@ -1,6 +1,9 @@
 // This file is part of the React Base project.
 import React from "react";
-import Login from "./pages/Login/Index";
+// import Login from "./pages/Login/Index";
+import { BrowserRouter } from "react-router-dom";
+
+import Routes from "./routes";
 
 import Header from "./components/Header";
 import GlobalStyles from "./styles/GlobalStyles";
@@ -8,17 +11,14 @@ import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   return (
-    <>
-    <div className="App">
-
-      {/* <h1>Hello world! </h1> */}
+    <BrowserRouter
+    >
+    {/* <div className="App"> */}
     <Header />
-    <Login />
+    <Routes />
     <GlobalStyles />
-    </div>
-
-
-    </>
+    {/* </div> */}
+    </BrowserRouter>
   )
 }
 
