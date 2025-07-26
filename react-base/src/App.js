@@ -1,7 +1,10 @@
 // This file is part of the React Base project.
 import React from "react";
-// import Login from "./pages/Login/Index";
 import { Router } from "react-router-dom";
+import {ToastContainer} from "react-toastify";
+
+
+
 import history from "./services/history";
 
 import Routes from "./routes";
@@ -17,6 +20,7 @@ function App() {
     <Header />
     <Routes />
     <GlobalStyles />
+    <ToastContainer autoClose={3000} className="toast-container"/>
     {/* </div> */}
     </Router>
   )
