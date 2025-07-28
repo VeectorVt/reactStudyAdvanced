@@ -7,7 +7,7 @@ import axios from "../../services/axios";
 export default function Login() {
     React.useEffect(() => {
       async function getData(){
-        const response = await axios.get('/');
+        const response = await axios.get('/alunos');
         console.log(response.data); // Assuming the homeController returns some data
       }
 
